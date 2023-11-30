@@ -1,12 +1,21 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Alert, Button, StyleSheet, Text, View } from 'react-native';
+import Imagen from './components/Imagen';
+import TabNavigator from './Navigators/BottomTab';
 
 export default function App() {
+  const edad = 123;
+
+  function mensaje() {
+    Alert.alert('Hola mundo')
+    console.log('Por consola');
+    
+    
+  }
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    
+    <TabNavigator/>
+
   );
 }
 
